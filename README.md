@@ -10,7 +10,7 @@ By default, the application should be loaded on `localhost:8080`. It should prov
 
 # Container Setup
 * Build image: `docker build .`
-* Run container with image: `docker run {image_id}` where `image_id` can be retrieved by running `docker images` and found under the column `IMAGE ID`
+* Run container with image: `docker run -p 8080:8080 {image_id}` where `image_id` can be retrieved by running `docker images` and found under the column `IMAGE ID`
 
 # Container teardown
 * Remove container: `docker kill {container_id}` where `container_id` can be retrieved by running `docker ps` and found under the column `CONTAINER ID`
